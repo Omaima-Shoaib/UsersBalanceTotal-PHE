@@ -1,0 +1,17 @@
+from lightphe import LightPHE
+import pytest
+import sys
+cs = LightPHE(algorithm_name = "Exponential-ElGamal", key_file = "private.txt")
+
+
+# Retrieve the sum cipher from the CS
+c3=(4909154454191031670873210060428862187647475339227339167991073789384116718332093644372055766199599585707212886256017159050045379162148583322161234047423377, 8464744295388337057625538419178489075833757670262671983634224920098266733244058120477301921225420502271366771954892851209242509072170360150441297652895780)
+
+c3=cs.create_ciphertext_obj(c3)
+# decryptedc3=cs.decrypt(c3)
+print("c3")
+print(c3)
+print("---------------------------------")
+dec=cs.decrypt(c3)
+print("decryption of the restored sum")
+print(dec)
