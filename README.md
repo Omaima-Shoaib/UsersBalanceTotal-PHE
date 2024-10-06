@@ -1,6 +1,4 @@
 **Homomorphic Encryption for Secure Cloud Banking**
-![image](https://github.com/user-attachments/assets/d77069e7-6eaf-43a0-af66-2687aa9762f3)
-
 **Introduction**
 
 This code implements a client-server application demonstrating homomorphic encryption for secure cloud banking operations. It utilizes the LightPHE library to perform homomorphic addition on encrypted user balances stored in a MongoDB database.
